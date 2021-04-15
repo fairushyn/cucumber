@@ -1,3 +1,6 @@
-# cucumber
+# cucumber test tool
 
-### script to run: ./node_modules/.bin/wdio ./wdio.conf.js
+> https://regexr.com/
+##### for making expressions
+### script to run tests: 
+> ./node_modules/.bin/wdio ./wdio.conf.js
