@@ -2,21 +2,24 @@ class Home {
     get url() {
         return "/";
     }
-
     get searchField() {
-        return $(".gLFyf.gsfi");
+        return $("#search_query_top");
     }
 
     get searchButton() {
-        return $(".aajZCb .gNO89b");
+        return $(".btn.btn-default.button-search");
     }
 
+    /**
+     * Searches for a keyword
+     *
+     * @param {String} keyword Search term
+     */
     search(keyword) {
-        this.searchField.waitForDisplayed(5000);
-        this.searchField.click();
+        this.searchField.waitForDisplayed(2000);
         this.searchField.setValue(keyword);
-        this.searchButton.waitForDisplayed(5000);
         this.searchButton.click();
     }
 }
+
 module.exports = new Home();
